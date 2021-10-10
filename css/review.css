@@ -1,0 +1,106 @@
+.review__title {
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4.25rem 0 2rem 0;
+}
+
+.review__list {
+  position: relative;
+}
+
+.review__item .active {
+  position: static;
+  width: 86%;
+  background-color: #F8FAF9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.review__item {
+  width: 86%;
+  background-color: #F8FAF9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.review__photo {
+  padding: 2.625rem 2.625rem;
+}
+
+.review__features {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #292929;
+  padding: 4.625rem 0 1.6875rem 0;
+}
+
+.review__text {
+  line-height: 1.1875rem;
+  color: #666666;
+  max-width: 74%;
+}
+
+.review__name {
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: #292929;
+  padding-top: 2.375rem;
+}
+
+.review__subreview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0.9375rem;
+}
+
+.review__first {
+  background: url(../img/review/subreview-1.png) center center no-repeat;
+  background-size: cover;
+  width: 4.625rem;
+  height: 4.625rem;
+  margin-right: 0.375rem;
+  border: 4px solid transparent;
+  border-radius: 50%;
+}
+.review__first:hover {
+  border: 4px solid #E01F3C;
+  border-radius: 50%;
+}
+
+.review__second {
+  background: url(../img/review/subreview-2.png) center center no-repeat;
+  background-size: cover;
+  width: 4.625rem;
+  height: 4.625rem;
+  margin-right: 0.375rem;
+  border: 4px solid transparent;
+  border-radius: 50%;
+}
+.review__second:hover {
+  border: 4px solid #E01F3C;
+  border-radius: 50%;
+}
+
+.review__third {
+  background: url(../img/review/subreview-3.png) center center no-repeat;
+  background-size: cover;
+  width: 4.625rem;
+  height: 4.625rem;
+  border: 4px solid transparent;
+  border-radius: 50%;
+}
+.review__third:hover {
+  border: 4px solid #E01F3C;
+  border-radius: 50%;
+}

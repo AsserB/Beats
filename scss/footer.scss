@@ -1,0 +1,38 @@
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 6.5625rem 1.25rem 6.5625rem;
+}
+
+.footer__text{
+  margin-bottom: 0.1875rem;
+}
+
+.footer__contact{
+  display: flex;
+  align-items: center;
+}
+
+.socials__list{
+  display: flex;
+}
+
+.socials__link{
+  display: flex;
+  text-decoration: none;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 0.625rem;
+}
+
+.socials__icon{
+  width: 1.875rem;
+  height: 1.875rem;
+  
+  &:hover{
+    fill: #000;
+  }
+}
+
+
+

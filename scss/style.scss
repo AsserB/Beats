@@ -1,0 +1,610 @@
+@import "./normalize.scss";
+@import "./header.scss";
+@import "./preview.scss";
+@import "./advantage.scss";
+@import "./features.scss";
+@import "./button.scss";
+@import "./team.scss";
+@import "./color.scss";
+@import "./review.scss";
+@import "./video.scss";
+@import "./order.scss";
+@import "./form.scss";
+@import "./media.scss";
+@import "./map.scss";
+@import "./footer.scss";
+@import "./hamburger.scss";
+@import "./overley.scss";
+
+
+$red: #E01F3D;
+$body: #666666;
+$black: #292929;
+$baseFontSize: 16px;
+
+html{
+  font-size: $baseFontSize;
+
+  @include tablets{
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones{
+    font-size: $baseFontSize - 2px;
+  }
+
+  @include oldphones{
+    font-size: $baseFontSize - 5px;
+  }
+
+}
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body{
+  height: 100%;
+}
+
+body{
+  font-family: 'Play', sans-serif;
+}
+
+.container{
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3{
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+ul li{
+  list-style: none;
+}
+
+/*-----CLASS HEADER----*/
+
+.nav{
+
+  @include tablets{
+    display: none;
+  }
+}
+
+.header__inner{
+  @include tablets{
+    justify-content: space-between;
+  }
+}
+
+.header__contact{
+  @include tablets{
+    display: none;
+  }
+}
+
+/*-----CLASS PREVIEW----*/
+
+.paginator{
+  @include tablets{
+    display: none;
+  }
+}
+
+.preview__options{
+  @include tablets{
+    display: none;
+  }
+}
+
+.preview__inner{
+  @include tablets{
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}
+
+.preview__item{
+  @include tablets{
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+
+    &:nth-child(2){
+      padding-bottom: 0;
+    }
+
+    &:last-child{
+      padding: 0;
+    }
+  }
+}
+
+.preview__img{
+  @include tablets{
+    max-width: 75%;
+  }
+}
+
+.preview__title{
+  @include tablets{
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.preview__subtitle{
+  @include tablets{
+    text-align: center;
+    width: 65%;
+  }
+}
+
+/*-----CLASS ADVANTAGE----*/
+
+.advantage{
+  @include tablets{
+    padding: 6rem 0 6rem 0;
+  }
+}
+
+.advantage__subtitle{
+  @include tablets{
+    max-width: 70%;
+  }
+}
+
+.advantage__subtext{
+  @include tablets{
+    width: 95%;
+  }
+}
+
+/*-----CLASS FEATURES----*/
+
+.features{
+  @include tablets{
+    padding: 6rem 0 6rem 0;
+  }
+}
+
+.headphones__items{
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+.features__item{
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  
+    &:first-child{
+      padding-bottom: 0;
+    }
+  }
+ 
+}
+
+.specifications{
+  @include tablets{
+    display: none;
+  }
+}
+
+.features__img{
+  @include tablets{
+    max-width: 80%;
+  }
+}
+
+.features__title{
+  @include tablets{
+    width: 104%;
+    font-size: 2.1rem;
+    text-align: center;
+  }
+}
+
+.features__subtitle{
+  @include tablets{
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.features__special{
+  @include tablets{
+    &:last-child{
+      padding: 0;
+    }
+  }
+}
+
+.features__price{
+  @include tablets{
+    padding-right: 2.8125rem;
+  }
+}
+
+.features__arrow{
+  @include tablets{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
+
+.features__arrow--prew--tablets{
+  @include tablets{
+    display: block;
+    padding-right: 1.9rem;
+  }
+}
+.features__arrow--next--tablets{
+  @include tablets{
+    padding-left: 1.9rem;
+    display: block;
+  }
+}
+
+.features__arrow--prew{
+  @include tablets{
+    display: none;
+  }
+}
+
+.features__arrow--next{
+  @include tablets{
+    display: none;
+  }
+}
+
+
+
+/*-----CLASS TEAM----*/
+
+.team__list{
+  @include tablets{
+    display: none;
+  }
+}
+
+.mobile{
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.team__item{
+  @include tablets{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+
+
+}
+
+ /*-----CLASS REVIEW----*/
+
+.review{
+  padding: 5rem 0 0 0;
+}
+
+
+ .review__item{
+   @include tablets{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+   }
+ }
+
+ .review__photo{
+   @include tablets{
+     text-align: center;
+   }
+ }
+
+ .review__img{
+   @include tablets{
+    width: 45%;
+   }
+ }
+
+ .review__content{
+   @include tablets{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+ }
+
+
+ .review__features{
+   @include tablets{
+    padding: 0 0 1.6875rem 0;
+   }
+ }
+
+ .review__text{
+   @include tablets{
+    max-width:95%;
+    text-align: center;
+   }
+ }
+
+
+.video__icon{
+  @include tablets{
+    width: 100%;
+    padding: 0 0.625rem 0 0.625rem;
+  }
+ 
+}
+
+  /*-----CLASS FORM----*/
+
+.order{
+  @include tablets{
+    padding: 5rem 0 5rem 0;
+  }
+}
+
+.form{
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.form__col{
+  @include tablets{
+    margin-right: 0;
+  }
+}
+
+.form__input--textarea{
+  @include tablets{
+    width: 100%;
+  }
+}
+
+.form__buttons{
+  @include tablets{
+    margin: 0 auto;
+  }
+}
+
+
+.map__icon{
+  @include tablets{
+    width: 100%;
+  }
+}
+
+/*-----ON PHONES----*/
+
+
+.preview
+
+.preview__img{
+  @include phones{
+    max-width: 100%;
+  }
+}
+
+.preview__item{
+  @include phones{
+    width: 100%;
+    padding: 2rem 0 1rem 0;
+  }
+}
+
+.preview__subtitle{
+  @include phones{
+    width: 100%;
+  }
+}
+
+.advantage{
+  @include phones{
+    padding: 0;
+  }
+}
+
+.advantage__list{
+  @include phones{
+    flex-direction: column;
+  }
+}
+
+.advantage__item{
+  @include phones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+  }
+}
+
+.advantage__content{
+  @include phones{
+    margin-left: 0.625rem;
+    width: 68%; 
+  }
+}
+
+.advantage__text{
+  @include phones{
+    text-align: start;
+  }
+}
+
+.advantage__subtext{
+ @include phones{
+  width: 100%;
+  text-align: start;
+ }
+}
+
+.features__img{
+  @include phones{
+    width: 100%;
+  }
+}
+
+.features__item{
+  @include phones{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.features__arrow--prew{
+  @include phones{
+    display: none;
+  }
+}
+
+.features__arrow--next{
+  @include phones{
+    display: none;
+  }
+}
+
+.footer__inner{
+  @include phones{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team{
+  @include phones{
+    padding: 0;
+  }
+  
+}
+
+.team__item{
+  @include phones{
+    width: 70%;
+  }
+}
+
+.review{
+  @include phones{
+    padding: 0;
+  }
+}
+
+.video__title{
+  @include phones{
+    width: 100%;
+  }
+}
+
+.video__icon{
+  @include phones{
+    width: 100;
+  }
+ 
+}
+
+.order{
+  @include phones{
+    padding: 0;
+  }
+}
+
+.form{
+  @include phones{
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.form__controls {
+  @include phones{
+    justify-content: center;
+  }
+}
+
+.form__input--textarea{
+  @include phones{
+    width: 100%;
+  };
+}
+
+.form__buttons{
+  @include phones{
+    justify-content: center;
+  }
+}
+
+.map__icon{
+  @include phones{
+    width: 100%;
+  }
+}
+
+
+.footer__inner{
+  @include phones{
+    width: 100%;
+  }
+}
+.footer__item{
+  @include phones{
+    width: 130%;
+    text-align: center;
+  }
+}
+
+.footer__contact{
+  @include phones{
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+  }
+}
+
+//OVERLAY
+

@@ -1,0 +1,46 @@
+$black: #292929;
+
+.header{
+  background: #F5F5F5;
+}
+
+.header__inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.875rem 0;
+}
+
+.nav__link{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: $black;
+  padding: 0 1.6875rem;
+  &:first-child{
+    padding-left: 2.375rem;
+  }
+  &:last-child{
+    padding-right: 0;
+  }
+
+}
+
+.header__contact{
+  display: flex;
+  align-items: center;
+  padding-left: 2.875rem;
+
+}
+
+.header__contact--number{
+  white-space: nowrap;
+  font-size: 1.125rem;
+  color: $black;
+}
+
+.header__contact--phone{
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.375rem;
+}
