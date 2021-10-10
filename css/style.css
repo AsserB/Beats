@@ -1231,6 +1231,8 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
 .nav--vertical {
