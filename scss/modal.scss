@@ -1,0 +1,18 @@
+.modal{
+  display: none;
+  border-radius: 5px;
+}
+
+.modal__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content{
+  padding-bottom: 2rem;
+}
+
+.error-modal{
+  color: red;
+}

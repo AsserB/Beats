@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
 
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap"
@@ -581,21 +582,22 @@
       <h1 class="order__title">закажите доставку</h1>
 
       <form class="form">
+        <input type="hidden" name= "to" value="somewhere@mail.com">
         <div class="form__col">
           <div class="form__row">
             <label class="form__block">
               <div class="form__title">Имя</div>
-              <input type="text" class="form__input">
+              <input type="text" name="name"  class="form__input">
             </label>
             <label class="form__block">
               <div class="form__title">Телефон</div>
-              <input type="text" class="form__input">
+              <input type="text" name="phone"  class="form__input">
             </label>
           </div>
           <div class="form__row">
             <label class="form__block">
               <div class="form__title">Улица</div>
-              <input type="text" class="form__input">
+              <input type="text" name="street"  class="form__input">
             </label>
           </div>
           <div class="form__row">
@@ -621,7 +623,7 @@
           <div class="form__row">
             <label class="form__block">
               <div class="form__title">Комментарий</div>
-              <textarea class="form__input form__input--textarea"></textarea>
+              <textarea class="form__input form__input--textarea" name="comment" ></textarea>
             </label>
           </div>
           <div class="form__controls">
@@ -725,14 +727,27 @@
     </div>
   </div>
 
+  <div class="modal" id="modal">
+    <div class="modal__container">
+      <div class="modal__content">
+        <p class="modal__text">Сообщение отправлено</p>
+      </div>
+      <div class="modal__button">
+        <a href="#" class="button app-button__close">Закрыть</a>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="./script/overley.js"></script>
   <script src="./script/slide.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="./script/slider.js"></script>
   <script src="./script/dropdown.js"></script>
+  <script src="./script/modal.js"></script>
 </body>
 
 </html>

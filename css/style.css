@@ -1040,6 +1040,10 @@ template {
   outline: none;
 }
 
+.input--error {
+  border-color: #E01F3D;
+}
+
 .form__controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1255,6 +1259,32 @@ template {
   width: 3%;
   cursor: pointer;
   margin: 0.9375rem 0.9375rem 0 0;
+}
+
+.modal {
+  display: none;
+  border-radius: 5px;
+}
+
+.modal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__content {
+  padding-bottom: 2rem;
+}
+
+.error-modal {
+  color: red;
 }
 
 html {

@@ -10,10 +10,10 @@ $('.features__arrow--next').click(function (e) {
     
 });
 
-$('.features__arrow--prew').click(function (e) { 
+$('.features__arrow--prev').click(function (e) { 
     e.preventDefault();
     
-    slider.goToPrevSlide();
+    slider.goToPrewSlide();
     
 });
 
@@ -24,9 +24,9 @@ $('.features__arrow--next--tablets').click(function (e) {
     
 });
 
-$('.features__arrow--prew--tablets').click(function (e) { 
+$('.features__arrow--prev--tablets').click(function (e) { 
     e.preventDefault();
     
-    slider.goToPrevSlide();
+    slider.goToPrewSlide();
     
 });
