@@ -1,5 +1,6 @@
 .team{
-  padding-bottom: 3rem;
+  width: 100%;
+  height: 100%;
 }
 
 .team__title{
@@ -47,6 +48,7 @@
     color: #292929;
     padding-bottom: 0.3rem;
     text-align: center;
+    font-weight: bold;
   }
   .team__content--text{
     text-align: center;

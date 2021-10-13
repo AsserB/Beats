@@ -395,8 +395,10 @@ template {
 }
 
 .preview {
+  width: 100%;
+  height: 100%;
   background: #F5F5F5;
-  padding-bottom: 4.375rem;
+  margin-bottom: 1rem;
 }
 
 .preview__inner {
@@ -483,13 +485,17 @@ template {
   height: 3.25rem;
 }
 
+.advantage {
+  width: 100%;
+  height: 100%;
+}
+
 .advantage__title {
   color: #292929;
   font-weight: bold;
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
-  padding: 6.3125rem 0 1.125rem 0;
 }
 
 .advantage__subtitle {
@@ -519,7 +525,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   width: 33%;
-  padding-bottom: 7.3125rem;
+  padding-bottom: 1.3125rem;
 }
 
 .icon--first {
@@ -568,6 +574,8 @@ template {
 .features {
   background: #F8FAF9;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .features__inner .bx-wrapper {
@@ -709,7 +717,8 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 1.75rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 .specification__item:last-child {
   padding-bottom: 0;
@@ -721,7 +730,6 @@ template {
 }
 
 .specification__icon {
-  padding-left: 2.1875rem;
   text-align: center;
 }
 
@@ -768,7 +776,8 @@ template {
 }
 
 .team {
-  padding-bottom: 3rem;
+  width: 100%;
+  height: 100%;
 }
 
 .team__title {
@@ -832,6 +841,7 @@ template {
   color: #292929;
   padding-bottom: 0.3rem;
   text-align: center;
+  font-weight: bold;
 }
 .team__content .team__content--text {
   text-align: center;
@@ -852,6 +862,11 @@ template {
   height: 70%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.review {
+  width: 100%;
+  height: 100%;
 }
 
 .review__title {
@@ -938,6 +953,9 @@ template {
 .review__subitem:hover {
   border: 4px solid #E01F3C;
   border-radius: 50%;
+}
+.review__subitem:last-child {
+  margin-right: 0;
 }
 
 .review__icon {
@@ -1441,7 +1459,7 @@ ul li {
 /*-----CLASS ADVANTAGE----*/
 @media screen and (max-width: 768px) {
   .advantage {
-    padding: 6rem 0 6rem 0;
+    padding: 10rem 0 0rem 0;
   }
 }
 
@@ -1458,12 +1476,6 @@ ul li {
 }
 
 /*-----CLASS FEATURES----*/
-@media screen and (max-width: 768px) {
-  .features {
-    padding: 6rem 0 6rem 0;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .headphones__items {
     display: -webkit-box;
@@ -1614,12 +1626,27 @@ ul li {
     margin-left: 0;
   }
 }
-
-/*-----CLASS REVIEW----*/
-.review {
-  padding: 5rem 0 0 0;
+@media screen and (max-width: 768px) {
+  .mobile .team__content--block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mobile .team__content--text {
+    width: 66%;
+  }
 }
 
+/*-----CLASS REVIEW----*/
 @media screen and (max-width: 768px) {
   .review__item {
     display: -webkit-box;
