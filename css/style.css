@@ -803,6 +803,10 @@ template {
   margin-left: 2.5rem;
 }
 
+.team__img {
+  width: 100%;
+}
+
 .team__member {
   padding: 1rem 0 0.8rem 0;
   -webkit-box-pack: center;
