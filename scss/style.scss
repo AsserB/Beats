@@ -140,6 +140,12 @@ ul li{
   }
 }
 
+.preview__img{
+  @include tablets{
+    max-width: 80%;
+  }
+}
+
 .preview__title{
   @include tablets{
     text-align: center;
@@ -380,7 +386,7 @@ ul li{
 
 .order{
   @include tablets{
-    padding: 5rem 0 5rem 0;
+   
   }
 }
 
@@ -422,12 +428,6 @@ ul li{
 
 
 .preview
-
-.preview__img{
-  @include phones{
-    max-width: 100%;
-  }
-}
 
 .preview__item{
   @include phones{

@@ -913,7 +913,7 @@ template {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
-  padding: 4.25rem 0 2rem 0;
+  padding: 0 0 2rem 0;
 }
 
 .review__list {
@@ -1012,16 +1012,6 @@ template {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .video__title {
@@ -1029,13 +1019,22 @@ template {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
-  padding: 3.625rem 0 2.75rem 0;
+  padding: 0 0 2.75rem 0;
 }
 
 .video__inner {
-  text-align: center;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .order {
@@ -1206,6 +1205,10 @@ template {
 .map__inner {
   text-align: center;
   width: 100%;
+  height: 100%;
+}
+
+.map__inner {
   height: 100%;
 }
 
@@ -1491,6 +1494,12 @@ ul li {
 }
 
 @media screen and (max-width: 768px) {
+  .preview__img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .preview__title {
     text-align: center;
     width: 100%;
@@ -1754,12 +1763,6 @@ ul li {
 
 /*-----CLASS FORM----*/
 @media screen and (max-width: 768px) {
-  .order {
-    padding: 5rem 0 5rem 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1799,13 +1802,7 @@ ul li {
 
 /*-----ON PHONES----*/
 @media screen and (max-width: 480px) {
-  .preview .preview__img {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .preview__item {
+  .preview .preview__item {
     width: 100%;
     padding: 2rem 0 1rem 0;
   }
