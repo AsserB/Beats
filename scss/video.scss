@@ -1,8 +1,11 @@
 .video{
   background: #F8FAF9;
-  margin-top: 3.9375rem;
-  padding-bottom: 6.25rem;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .video__title{

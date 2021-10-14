@@ -398,7 +398,12 @@ template {
   width: 100%;
   height: 100%;
   background: #F5F5F5;
-  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .preview__inner {
@@ -488,6 +493,12 @@ template {
 .advantage {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .advantage__title {
@@ -576,6 +587,12 @@ template {
   position: relative;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .features__inner .bx-wrapper {
@@ -778,6 +795,12 @@ template {
 .team {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .team__title {
@@ -801,6 +824,7 @@ template {
   width: 20%;
   position: relative;
   margin-left: 2.5rem;
+  cursor: pointer;
 }
 
 .team__img {
@@ -863,20 +887,31 @@ template {
 .color {
   width: 100%;
   height: 100%;
-}
-
-.color__inner {
-  height: 100%;
-  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .color__img {
   width: 100%;
+  height: 100%;
 }
 
 .review {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .review__title {
@@ -980,9 +1015,19 @@ template {
 
 .video {
   background: #F8FAF9;
-  margin-top: 3.9375rem;
-  padding-bottom: 6.25rem;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .video__title {
@@ -1003,6 +1048,12 @@ template {
   background: #181818;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .order__title {
