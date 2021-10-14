@@ -1,7 +1,13 @@
 .color{
-  background:url(../img/Slider.png) center no-repeat;
   width: 100%;
-  height: 70%;
-  margin: 0 auto;
+  height: 100%;
+}
+
+.color__inner{
+  height: 100%;
   overflow: hidden;
+}
+
+.color__img{
+  width: 100%;
 }
