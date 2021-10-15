@@ -1906,6 +1906,12 @@ ul li {
 }
 
 @media screen and (max-width: 480px) {
+  .team__name {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .team__item {
     width: 70%;
   }

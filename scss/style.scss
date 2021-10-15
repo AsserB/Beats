@@ -522,6 +522,12 @@ ul li{
   
 }
 
+.team__name{
+  @include phones{
+    white-space: nowrap;
+  }
+}
+
 .team__item{
   @include phones{
     width: 70%;
